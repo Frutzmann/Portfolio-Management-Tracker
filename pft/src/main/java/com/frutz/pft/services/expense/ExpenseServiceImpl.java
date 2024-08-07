@@ -3,6 +3,7 @@ package com.frutz.pft.services;
 import com.frutz.pft.dto.ExpenseDTO;
 import com.frutz.pft.entity.Expense;
 import com.frutz.pft.repository.ExpenseRepository;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +28,33 @@ public class ExpenseServiceImpl implements ExpenseService {
 
     }
 
-    public Expense getExpenseById(int id) {
-        return null;
+    public Expense getExpenseById(long id) {
+        Expense expense = expenseRepository.findById(id).orElse(null);
+
+        if (expense == null) {
+            throw new EntityNotFoundException("Expense with id " + id + " not found");
+        }
+
+        return expense;
+    }
+
+    public Expense updateExpense(long id, ExpenseDTO expenseDTO) {
+        Expense expense = expenseRepository.findById(id).orElse(null);
+
+        if (expense == null) {
+            throw new EntityNotFoundException("Error - Expense not found or does not exist - " + id);
+        }
+        return saveOrUpdateExpense(expense, expenseDTO);
+    }
+
+    public void deleteExpense(long id) {
+        Expense expense = expenseRepository.findById(id).orElse(null);
+
+        if (expense == null) {
+            throw new EntityNotFoundException("Error - Expense not found or does not exist - " + id);
+        }
+
+        expenseRepository.delete(expense);
     }
 
     private Expense saveOrUpdateExpense(Expense expense, ExpenseDTO expenseDTO) {
