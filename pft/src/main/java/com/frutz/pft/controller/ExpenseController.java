@@ -2,13 +2,12 @@ package com.frutz.pft.controller;
 
 import com.frutz.pft.dto.ExpenseDTO;
 import com.frutz.pft.entity.Expense;
-import com.frutz.pft.services.ExpenseService;
+import com.frutz.pft.services.expense.ExpenseService;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/expense")
@@ -32,4 +31,38 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getExpenses());
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getExpenseById(@PathVariable long id) {
+        try {
+            return ResponseEntity.ok(expenseService.getExpenseById(id));
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
+
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> putExpense(@PathVariable long id, @RequestBody ExpenseDTO eDTO) {
+        try {
+            return ResponseEntity.ok(expenseService.updateExpense(id, eDTO));
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteExpense(@PathVariable long id) {
+        try {
+            expenseService.deleteExpense(id);
+            return ResponseEntity.ok(null);
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
+    }
 }

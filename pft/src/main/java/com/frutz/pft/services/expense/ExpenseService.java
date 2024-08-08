@@ -1,4 +1,4 @@
-package com.frutz.pft.services;
+package com.frutz.pft.services.expense;
 
 import com.frutz.pft.dto.ExpenseDTO;
 import com.frutz.pft.entity.Expense;

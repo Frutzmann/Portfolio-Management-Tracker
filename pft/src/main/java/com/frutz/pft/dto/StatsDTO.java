@@ -1,2 +1,21 @@
-package com.frutz.pft.dto;public class StatsDTO {
+package com.frutz.pft.dto;
+
+import com.frutz.pft.entity.Expense;
+import com.frutz.pft.entity.Income;
+import lombok.Data;
+
+@Data
+public class StatsDTO {
+
+    private Double income;
+    private Double expense;
+
+    private Income latestIncome;
+    private Expense latestExpense;
+
+    private Double balance;
+    private Double minIncome;
+    private Double maxIncome;
+    private Double minExpense;
+    private Double maxExpense;
 }
