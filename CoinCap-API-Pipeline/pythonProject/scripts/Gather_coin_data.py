@@ -25,6 +25,9 @@ def insert_coin_data(connection, coin_object_data):
     columns = ["id", "rank", "symbol",
                "name", "supply", "maxSupply",
                "marketCapUsd", "volumeUsd24Hr", "priceUsd"]
+    sql_cols = ','.join(columns)
+    query = "INSERT INTO coin (%s) VALUES (%s) RETURNING id;"
+    print(sql_cols)
 
     return
 
@@ -59,3 +62,5 @@ def convert_data(data_to_convert):
 
 
 get_coins_data()
+conn = connect_to_database()
+insert_coin_data(conn, get_coins_data())
