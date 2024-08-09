@@ -5,28 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Connect_to_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/PftApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/PftApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/ExpenseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/IncomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/StatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/StatsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/GraphDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/GraphDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/IncomeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/IncomeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/StatsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/StatsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Income.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/ExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/ExpenseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/IncomeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/IncomeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/controller/ExpenseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/frutz/pft/controller/ExpenseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/repository/ExpenseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/frutz/pft/repository/ExpenseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/services/ExpenseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/services/ExpenseServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +57,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/remix/MyPortfolio/Portfolio Tracker/Portfolio Management Tracker/pft&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/frutz/Desktop/Portfolio/Portfolio Management Tracker/Portfolio-Management-Tracker/pft&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -142,8 +125,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.300" />
       </set>
     </attachedChunks>
   </component>
@@ -160,6 +143,7 @@
       <workItem from="1723010485265" duration="5114000" />
       <workItem from="1723021156650" duration="7906000" />
       <workItem from="1723101409768" duration="2023000" />
+      <workItem from="1723125088919" duration="2263000" />
     </task>
     <servers />
   </component>
