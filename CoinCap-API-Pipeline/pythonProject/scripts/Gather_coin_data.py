@@ -26,10 +26,14 @@ def insert_coin_data(connection, coin_object_data):
                "name", "supply", "maxSupply",
                "marketCapUsd", "volumeUsd24Hr", "priceUsd"]
     sql_cols = ','.join(columns)
-    query = "INSERT INTO coin (%s) VALUES (%s) RETURNING id;"
-    print(sql_cols)
-
-    return
+    placeholders = ','.join(['%s'] * len(columns))
+    cTuple = Coin.to_tuple(coin_object_data)
+    try:
+        query = f'INSERT INTO coin VALUES ({placeholders});'
+        cursor.executemany(query, cTuple)
+        connection.commit()
+    except Exception as e:
+        raise Exception("Error inserting the coins list: ", e)
 
 
 def update_coin_data(connection, coin_object_data):
@@ -49,6 +53,7 @@ def get_coins_data():
     try:
         coins_json_request = requests.get("https://api.coincap.io/v2/assets", params=payload).json()['data']
         list_of_coins = convert_data(coins_json_request)
+        print(list_of_coins)
         return list_of_coins
     except Exception as ex:
         raise Exception("There has been an error connecting to API: ", ex)
