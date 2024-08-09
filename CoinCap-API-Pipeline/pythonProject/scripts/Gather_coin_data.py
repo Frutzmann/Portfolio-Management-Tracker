@@ -37,7 +37,30 @@ def insert_coin_data(connection, coin_object_data):
 
 def update_coin_data(connection, coin_object_data):
     cursor = connection.cursor()
-    coin_tuple = Coin.to_tuple(coin_object_data)
+
+    for coin in coin_object_data:
+        try:
+            query = f"""
+                UPDATE coin
+                SET rank = %s,
+                    supply = %s,
+                    "marketCapUsd" = %s,
+                    "volumeUsd24Hr" = %s,
+                    "changePercent24Hr" = %s,
+                    "priceUsd" = %s
+                WHERE id = %s
+            """
+
+            data = (
+                coin["rank"], coin["supply"], coin["marketCapUsd"],
+                coin["volumeUsd24Hr"], coin["changePercent24Hr"], coin["priceUsd"],
+                coin["id"]
+            )
+            cursor.execute(query, data)
+            connection.commit()
+
+        except Exception as e:
+            raise Exception("Error updating the coins list: ", e)
 
     return
 
@@ -70,4 +93,4 @@ def convert_data(data_to_convert):
 
 get_coins_data()
 conn = connect_to_database()
-insert_coin_data(conn, get_coins_data())
+update_coin_data(conn, get_coins_data())
