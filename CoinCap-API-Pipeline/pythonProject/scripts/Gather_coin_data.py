@@ -20,23 +20,25 @@ def connect_to_database():
 
 
 def insert_coin_data(connection, coin_object_data):
-    """Updating the coins list"""
+    """Inserting the coins list"""
     cursor = connection.cursor()
     columns = ["id", "rank", "symbol",
                "name", "supply", "maxSupply",
                "marketCapUsd", "volumeUsd24Hr", "priceUsd"]
-    sql_cols = ','.join(columns)
     placeholders = ','.join(['%s'] * len(columns))
-    cTuple = Coin.to_tuple(coin_object_data)
+    coin_tuple = Coin.to_tuple(coin_object_data)
     try:
         query = f'INSERT INTO coin VALUES ({placeholders});'
-        cursor.executemany(query, cTuple)
+        cursor.executemany(query, coin_tuple)
         connection.commit()
     except Exception as e:
         raise Exception("Error inserting the coins list: ", e)
 
 
 def update_coin_data(connection, coin_object_data):
+    cursor = connection.cursor()
+    coin_tuple = Coin.to_tuple(coin_object_data)
+
     return
 
 
