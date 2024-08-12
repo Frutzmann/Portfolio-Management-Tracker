@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="" />
+    <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/CoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/CoinDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/CoinRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +148,7 @@
       <workItem from="1723021156650" duration="7906000" />
       <workItem from="1723101409768" duration="2023000" />
       <workItem from="1723125088919" duration="2263000" />
-      <workItem from="1723451435778" duration="330000" />
+      <workItem from="1723451435778" duration="5399000" />
     </task>
     <servers />
   </component>

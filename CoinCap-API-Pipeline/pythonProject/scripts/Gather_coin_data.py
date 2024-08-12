@@ -14,7 +14,8 @@ def connect_to_database():
     """Database connection"""
     # Database connection needs to be defined as environment variables / secrets
     try:
-        connection = pg.connect(database='pft', user='postgres', password='2105', port='5432', host='localhost')
+        connection = pg.connect(database='pft', user='postgres',
+                                password='2105', port='5432', host='localhost')
         return connection
     except Exception as e:
         raise Exception("Error connecting database: ", e)
@@ -77,7 +78,8 @@ def get_coins_data():
     }
 
     try:
-        coins_json_request = requests.get("https://api.coincap.io/v2/assets", params=payload).json()['data']
+        coins_json_request = requests.get("https://api.coincap.io/v2/assets",
+                                          params=payload).json()['data']
         list_of_coins = convert_data(coins_json_request)
         return list_of_coins
     except Exception as ex:
@@ -89,8 +91,3 @@ def convert_data(data_to_convert):
     for token in data_to_convert:
         coins.append(Coin.from_dict(token))
     return coins
-
-
-coins = get_coins_data()
-conn = connect_to_database()
-update_coin_data(conn, coins)
