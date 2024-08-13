@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
+import NavBar from "@/app/components/navbar/navbar";
+import Footer from "@/app/components/footer/footer";
+import Layout from "@/app/components/layout/layout";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        <main className={"bg-darktwo h-screen"}>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

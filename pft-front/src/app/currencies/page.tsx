@@ -1,10 +1,10 @@
 import {NextPage} from "next";
-import CoinList from "@/app/components/coin/coinList";
+import List from "@/app/components/coin/list";
 
-const TokenListing: NextPage = () => {
+const Currencies: NextPage = () => {
     return <div>
-        <CoinList />
+        <List />
     </div>
 }
 
-export default TokenListing;
+export default Currencies;

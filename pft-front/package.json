@@ -12,6 +12,7 @@
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^5.16.7",
+    "axios": "^1.7.3",
     "daisyui": "^4.12.10",
     "evergreen-ui": "^7.1.9",
     "next": "14.2.5",

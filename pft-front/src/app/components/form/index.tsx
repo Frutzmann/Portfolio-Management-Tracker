@@ -1,4 +1,5 @@
-import {NextPage} from "next";
+"use client";
+
 import {ChangeEvent, useState} from "react";
 import Switch from "@mui/material/Switch";
 import SignUp from "@/app/components/form/signup";
@@ -12,7 +13,7 @@ const Form: React.FC = () => {
     }
 
     return <div style={{border: "1px solid green", boxShadow: "0px 0px 50 px rgb(26 173 46 / 15%"}}
-                className="rounded-lg mt-3 text-white bg-indigo-500 p-5 w-[90%] m-auto lg:w-[800px] md:w-[800px]">
+                className="rounded-lg mt-3 text-white bg-indigo-500 p-5 w-[90%] m-auto lg:w-[800px] md:w-[800px]" align={"center"}>
         <div className="p-5 w-full">
             <Switch
                 checked={checked}

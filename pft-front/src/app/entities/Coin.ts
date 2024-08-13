@@ -4,7 +4,6 @@ export interface Coin {
     symbol: string;
     name: string;
     supply: number;
-    maxSupply: number;
     marketCapUsd: number;
     volumeUsd24Hr: number;
     changePercent24Hr: number;

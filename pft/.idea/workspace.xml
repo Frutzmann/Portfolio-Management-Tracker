@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/signup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/api/coin/get.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/api/coin/get.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/coin/coinList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/footer/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/currencies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/currencies/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/signup/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/signup/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/components/coinCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/entities/Coin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/entities/Coin.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +156,7 @@
       <workItem from="1723101409768" duration="2023000" />
       <workItem from="1723125088919" duration="2263000" />
       <workItem from="1723451435778" duration="5761000" />
-      <workItem from="1723525828277" duration="782000" />
+      <workItem from="1723525828277" duration="1710000" />
     </task>
     <servers />
   </component>
