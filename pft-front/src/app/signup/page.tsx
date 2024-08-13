@@ -1,16 +1,15 @@
 import {NextPage} from "next";
-import {useRouter} from "next/router";
 import Form from "@/app/components/form";
 
-const Signup : NextPage = () => {
-    const router = useRouter();
+const SignUp: NextPage = () => {
 
     return (
         <div>
+            <p>Sign Up Page</p>
             <Form />
         </div>
     )
 
 }
 
-export default Signup;
+export default SignUp;

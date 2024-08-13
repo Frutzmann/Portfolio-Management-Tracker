@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
     return <div className="navbar bg-base-100">
         <div className="flex-1">
             <a className="btn btn-ghost text-xl">PFT</a>
@@ -32,10 +32,11 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li><a>Settings</a></li>
-                    <li><Link href="/signup">Login</Link></li>
+                    <li><Link href="/src/app/signup">Login</Link></li>
                 </ul>
             </div>
         </div>
     </div>
-
 }
+
+export default Navbar;
