@@ -15,15 +15,17 @@ public class Coin {
     private String rank;
     private String symbol;
     private String name;
-    private long supply;
+    private float supply;
 
-    private long marketCapUsd;
+    @Column(name = "market_cap_usd")
+    private float marketCapUsd;
 
     @Column(name = "volume_usd24hr")
-    private long volumeUsd24Hr;
+    private float volumeUsd24Hr;
 
     @Column(name = "change_percent24hr")
-    private long changePercent24Hr;
+    private float changePercent24Hr;
 
-    private long priceUsd;
+    @Column(name = "price_usd")
+    private float priceUsd;
 }

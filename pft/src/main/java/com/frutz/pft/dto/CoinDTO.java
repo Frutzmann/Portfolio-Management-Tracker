@@ -15,13 +15,13 @@ public class CoinDTO {
 
     private String name;
 
-    private long supply;
+    private float supply;
 
-    private long marketCapUsd;
+    private float marketCapUsd;
 
-    private long volumeUsd24Hr;
+    private float volumeUsd24Hr;
 
-    private long changerPercent24Hr;
+    private float changerPercent24Hr;
 
-    private long priceUsd;
+    private float priceUsd;
 }

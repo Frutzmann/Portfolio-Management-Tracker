@@ -25,7 +25,7 @@ def insert_coin_data(connection, coin_object_data):
     """Inserting the coins list"""
     cursor = connection.cursor()
     columns = ["id", "rank", "symbol",
-               "name", "supply", "maxSupply",
+               "name", "supply",
                "marketCapUsd", "volumeUsd24Hr", "priceUsd"]
     placeholders = ','.join(['%s'] * len(columns))
     coin_tuple = Coin.to_tuple(coin_object_data)
@@ -46,18 +46,17 @@ def update_coin_data(connection, coin_object_data):
                 UPDATE coin
                 SET rank = %s,
                     supply = %s,
-                    "marketCapUsd" = %s,
-                    "volumeUsd24Hr" = %s,
-                    "changePercent24Hr" = %s,
-                    "priceUsd" = %s,
-                    "updatedAt" = %s
+                    "market_cap_usd" = %s,
+                    "volume_usd24hr" = %s,
+                    "change_percent24hr" = %s,
+                    "price_usd" = %s,
+                    "updated_at" = %s
                 WHERE id = %s
             """
-
             data = (
-                coin["rank"], coin["supply"], coin["marketCapUsd"],
-                coin["volumeUsd24Hr"], coin["changePercent24Hr"], coin["priceUsd"],
-                datetime.now(), coin["id"]
+                coin["rank"], coin["supply"],
+                coin["marketCapUsd"], coin["volumeUsd24Hr"], coin["changePercent24Hr"],
+                coin["priceUsd"], datetime.now(), coin["id"]
             )
             cursor.execute(query, data)
             connection.commit()
