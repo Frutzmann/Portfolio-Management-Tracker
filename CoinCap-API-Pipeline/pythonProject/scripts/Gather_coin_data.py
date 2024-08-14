@@ -85,6 +85,22 @@ def get_coins_data():
         raise Exception("There has been an error connecting to API: ", ex)
 
 
+def fetch_images(coins):
+    """Fetching images logo"""
+    coin_images = []
+    for coin in coins:
+        try:
+            symbol = coin["symbol"].lower()
+            print("Symbol, ", symbol)
+            image = requests.get(f"https://assets.coincap.io/assets/icons/{symbol}@2x.png").content
+            print(image)
+            coin_images.append(image)
+        except Exception as e:
+            raise Exception("There has been an error connecting to API: ", e)
+
+    # save_images_to_database(coin_images)
+
+
 def convert_data(data_to_convert):
     coins = []
     for token in data_to_convert:

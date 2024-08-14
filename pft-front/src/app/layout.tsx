@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <NavBar />
-        <main className={"bg-darktwo h-screen"}>
+        <main className={"bg-offwhite h-screen"}>
           {children}
         </main>
         <Footer />

@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/signup.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/api/coin/get.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/api/coin/get.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/coin/coinList.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/footer/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pft-front/bin/scripts/coins/fetchimgs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/components/portfolio/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/portfolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/signup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/currencies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/currencies/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/layout/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pft-front/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/signup/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/signup/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/components/coinCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/entities/Coin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/entities/Coin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/CoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/CoinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,31 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PftApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pft-cron-experimental&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/frutz/Desktop/Portfolio/Portfolio Management Tracker/Portfolio-Management-Tracker/pft&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.PftApplication.executor": "Run",
+    "git-widget-placeholder": "pft-cron-experimental",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.PftApplication">
     <configuration name="pft" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -156,7 +155,9 @@
       <workItem from="1723101409768" duration="2023000" />
       <workItem from="1723125088919" duration="2263000" />
       <workItem from="1723451435778" duration="5761000" />
-      <workItem from="1723525828277" duration="1710000" />
+      <workItem from="1723525828277" duration="2307000" />
+      <workItem from="1723613807743" duration="1920000" />
+      <workItem from="1723624599326" duration="806000" />
     </task>
     <servers />
   </component>

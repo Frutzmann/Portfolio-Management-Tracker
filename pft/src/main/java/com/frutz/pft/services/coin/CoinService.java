@@ -8,5 +8,6 @@ public interface CoinService {
 
     List<Coin> getAllCoins();
     Coin getCoinById(String id);
+    List<String> getCoinsSymbol();
 
 }

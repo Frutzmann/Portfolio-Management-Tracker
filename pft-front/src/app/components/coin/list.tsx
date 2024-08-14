@@ -2,6 +2,9 @@
 import getCoins from "@/app/api/coin/get";
 import {useEffect, useState} from "react";
 import {Coin} from "@/app/entities/Coin";
+import Image from 'next/image';
+// import Icons from "../../../../public/assets/icons";
+
 
 const List: React.FC = () => {
     const [coins, setCoins] = useState<Coin[]>([]);
@@ -26,8 +29,8 @@ const List: React.FC = () => {
 
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
-    return <div className={"overflow-x-auto w-full mt-5 pb-5"}>
-        <table className={"w-[90%] table"} align={"center"} data-theme={"dark"}>
+    return <div className={"w-full mt-10 pb-5"}>
+        <table className={"w-[70%] h-full table rounded-xl"} align={"center"} data-theme={"light"}>
             <thead>
                 <tr>
                     <th>#</th>
@@ -42,7 +45,7 @@ const List: React.FC = () => {
             <tbody>
             {currentCoins.map((coin) => (
                 <tr key={coin.id}>
-                    <td>{coin.symbol}</td>
+                    <td><Image src={"/assets/icons/" + coin.symbol.toLowerCase() + ".png"} alt={coin.symbol} width={30} height={30}/></td>
                     <td>{coin.rank}</td>
                     <td>{coin.id}</td>
                     <td>{coin.priceUsd}</td>
@@ -57,7 +60,7 @@ const List: React.FC = () => {
             {[...Array(Math.ceil(coins.length / coinsPerPage)).keys()].map((number : number) => (
                 <button
                     key={number + 1} onClick={() => paginate(number + 1)}
-                    className={`mx-1 px-3 py-1 rounded ${number + 1 === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-300'
+                    className={`mx-1 px-3 py-1 rounded ${number + 1 === currentPage ? 'bg-blue-500 text-darkzero' : 'bg-darkone'
                 }`}> {number + 1} </button>
             ))}
         </div>

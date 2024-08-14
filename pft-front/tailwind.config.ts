@@ -10,7 +10,9 @@ const config: Config = {
     colors: {
       darkzero: "#0E141F",
       darkone: "#151B26",
-      darktwo: "#1e2635"
+      darktwo: "#1e2635",
+      offwhite: "#eceff1",
+      white: "#fafafa"
     },
     extend: {
       backgroundImage: {

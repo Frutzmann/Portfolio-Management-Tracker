@@ -6,7 +6,7 @@ import {NextPage} from "next";
 
 const Layout: NextPage = () => {
     return (
-        <main className="bg-darktwo h-screen">
+        <main className="bg-offwhite h-screen">
         </main>
     )
 }

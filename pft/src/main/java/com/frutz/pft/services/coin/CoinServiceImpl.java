@@ -31,4 +31,12 @@ public class CoinServiceImpl implements CoinService {
 
         return coin;
     }
+
+    @Override
+    public List<String> getCoinsSymbol() {
+        return coinRepository.findAll().stream()
+                .sorted(Comparator.comparing(Coin::getRank))
+                .map(Coin::getSymbol)
+                .collect(Collectors.toList());
+    }
 }

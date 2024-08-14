@@ -31,4 +31,9 @@ public class CoinController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
     }
+
+    @GetMapping("/all/symb")
+    public ResponseEntity<?> getAllSymbols() {
+        return ResponseEntity.ok(coinService.getCoinsSymbol());
+    }
 }
