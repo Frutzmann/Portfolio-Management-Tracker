@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PositionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/CoinPortfolioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PositionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/CoinPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/CoinPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/PositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coinportfolio/CoinPortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PositionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PositionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.PftApplication.executor": "Run",
+    "Spring Boot.PftApplication.executor": "Debug",
     "git-widget-placeholder": "pft-cron-experimental",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -149,7 +145,7 @@
       <workItem from="1723451435778" duration="5761000" />
       <workItem from="1723525828277" duration="2307000" />
       <workItem from="1723613807743" duration="1920000" />
-      <workItem from="1723624599326" duration="8407000" />
+      <workItem from="1723624599326" duration="10477000" />
     </task>
     <servers />
   </component>

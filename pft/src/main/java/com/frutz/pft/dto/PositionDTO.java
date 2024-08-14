@@ -12,14 +12,14 @@ public class PositionDTO {
     private long id;
 
     @Getter
-    private Coin coin;
+    private String coin;
 
     @Getter
     private long numberOfCoins;
 
     @Getter
-    private Portfolio portfolio;
+    private long portfolioId;
 
     @Getter
-    private BigDecimal amoundUsd;
+    private BigDecimal amountUsd;
 }

@@ -1,26 +1,40 @@
 package com.frutz.pft.services.position;
 
 import com.frutz.pft.dto.PositionDTO;
+import com.frutz.pft.entity.Coin;
 import com.frutz.pft.entity.Portfolio;
 import com.frutz.pft.entity.Position;
+import com.frutz.pft.repository.CoinRepository;
+import com.frutz.pft.repository.PortfolioRepository;
 import com.frutz.pft.repository.PositionRepository;
+import com.frutz.pft.services.portfolio.PortfolioService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class PositionServiceImp implements  PositionService{
 
     private final PositionRepository positionRepository;
+    private final PortfolioRepository portfolioRepository;
+    private final CoinRepository coinRepository;
+
     @Override
     public Position saveOrUpdatePosition(Position position, PositionDTO positionDTO) {
-        position.setPortfolio(positionDTO.getPortfolio());
-        position.setCoin(positionDTO.getCoin());
+        long id = positionDTO.getPortfolioId();
+        Optional<Portfolio> portfolio = portfolioRepository.findById(positionDTO.getPortfolioId());
+        Optional<Coin> coin = coinRepository.findById(positionDTO.getCoin());
+        if(portfolio.isEmpty() || coin.isEmpty())
+            return null;
+
+        position.setPortfolio(portfolio.get());
+        position.setCoin(coin.get());
         position.setNumberOfCoins(positionDTO.getNumberOfCoins());
-        position.setAmountUsd(positionDTO.getAmoundUsd());
+        position.setAmountUsd(positionDTO.getAmountUsd());
 
         return positionRepository.save(position);
     }
