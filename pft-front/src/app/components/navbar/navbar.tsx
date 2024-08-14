@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-center flex-1">
             <ul className="menu menu-horizontal px-1">
                 <li><a>Portfolio</a></li>
-                <li><Link href="/currencies">Tokens Listing</Link></li>
+                <li><Link href="/pages/currencies">Tokens Listing</Link></li>
                 <li><a>Assessments</a></li>
             </ul>
         </div>
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                         </a>
                     </li>
                     <li><a>Settings</a></li>
-                    <li><Link href="/signup">Login</Link></li>
+                    <li><Link href="/pages/signup">Login</Link></li>
                 </ul>
             </div>
         </div>

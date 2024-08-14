@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pft-front/bin/scripts/coins/fetchimgs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/components/portfolio/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pft-front/src/app/portfolio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/coin/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pft-front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PortfolioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/CoinPortfolioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PortfolioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/CoinPortfolio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Portfolio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/CoinPortfolio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/PortfolioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/components/navbar/navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/currencies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/pages/currencies/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/portfolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/pages/portfolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pft-front/src/app/signup/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pft-front/src/app/pages/signup/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/CoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/CoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/coin/CoinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -157,7 +160,7 @@
       <workItem from="1723451435778" duration="5761000" />
       <workItem from="1723525828277" duration="2307000" />
       <workItem from="1723613807743" duration="1920000" />
-      <workItem from="1723624599326" duration="806000" />
+      <workItem from="1723624599326" duration="5175000" />
     </task>
     <servers />
   </component>
