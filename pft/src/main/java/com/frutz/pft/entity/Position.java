@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-public class CoinPortfolio {
+public class Position {
     @Id
     @GeneratedValue
     private Long id;
@@ -15,6 +15,9 @@ public class CoinPortfolio {
     @ManyToOne
     @JoinColumn(name = "coin_id", nullable = false)
     private Coin coin;
+
+    @Column(name = "number_of_coins")
+    private long numberOfCoins;
 
     @ManyToOne
     @JoinColumn(name = "portfolio_id", nullable = false)
