@@ -8,6 +8,9 @@ public class PortfolioDTO {
     private long id;
 
     @Getter
+    private long userId;
+
+    @Getter
     private long cash_balance_usd;
 
     @Getter

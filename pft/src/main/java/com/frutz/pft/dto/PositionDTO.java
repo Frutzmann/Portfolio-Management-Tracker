@@ -12,7 +12,7 @@ public class PositionDTO {
     private long id;
 
     @Getter
-    private String coin;
+    private String coinId;
 
     @Getter
     private long numberOfCoins;

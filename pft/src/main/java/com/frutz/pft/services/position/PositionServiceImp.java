@@ -27,7 +27,7 @@ public class PositionServiceImp implements  PositionService{
     public Position saveOrUpdatePosition(Position position, PositionDTO positionDTO) {
         long id = positionDTO.getPortfolioId();
         Optional<Portfolio> portfolio = portfolioRepository.findById(positionDTO.getPortfolioId());
-        Optional<Coin> coin = coinRepository.findById(positionDTO.getCoin());
+        Optional<Coin> coin = coinRepository.findById(positionDTO.getCoinId());
         if(portfolio.isEmpty() || coin.isEmpty())
             return null;
 

@@ -8,5 +8,6 @@ public interface PortfolioService {
     Portfolio getPortfolioById(long id);
     Portfolio updatePortfolio(long id, PortfolioDTO pDTO);
     Portfolio postPortfolio(PortfolioDTO pDTO);
+    Portfolio getPortfolioByUserId(long userId);
     void deletePortfolio(long id);
 }

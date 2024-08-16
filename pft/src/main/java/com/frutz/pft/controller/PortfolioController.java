@@ -38,6 +38,18 @@ public class PortfolioController {
         }
     }
 
+    @GetMapping("/user/{id}")
+    public ResponseEntity<?> getPortfolioByUserId(@PathVariable long id) {
+        try {
+            Portfolio portfolio = portfolioService.getPortfolioByUserId(id);
+            return ResponseEntity.ok(portfolio);
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<?> updatePortfolio(@PathVariable long id, @RequestBody PortfolioDTO portfolioDTO) {
         try {

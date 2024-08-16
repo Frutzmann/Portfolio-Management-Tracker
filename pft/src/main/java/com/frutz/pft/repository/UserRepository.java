@@ -1,10 +1,11 @@
 package com.frutz.pft.repository;
 
-import com.frutz.pft.entity.Portfolio;
+import com.frutz.pft.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PortfolioRepository extends JpaRepository<Portfolio, Long> {
-    Portfolio findByUserId(long userId);
+public interface UserRepository extends JpaRepository<User, Long> {
+
+
 }
