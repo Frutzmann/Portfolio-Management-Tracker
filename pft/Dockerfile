@@ -14,7 +14,15 @@ FROM eclipse-temurin:22 AS build
 #RUN mvn clean install
 
 FROM eclipse-temurin:22-alpine
+
 WORKDIR /app
+
 COPY ./target/*.jar /app/pft.jar
+
 EXPOSE 8080
+
+ENV SPRING_DATASOURCE_URL="jdbc:postgresql://host.docker.internal:5432/pft"
+ENV SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
+ENV SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
+
 CMD ["java", "-jar", "/app/pft.jar"]

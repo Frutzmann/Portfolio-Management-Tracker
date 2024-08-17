@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build_and_dockerize.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/PftApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/controller/ExpenseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/dto/ExpenseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/entity/Expense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/repository/ExpenseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_and_dockerize.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +79,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Shell Script.Build and Dockerize">
+  <component name="RunManager" selected="Docker.Image dev">
     <configuration name="pft [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="SPRING_DATASOURCE_PASSWORD" value="2105" />
+                <entry key="SPRING_DATASOURCE_URL" value="jdbc:postgresql://localhost:5432/pft" />
+                <entry key="SPRING_DATASOURCE_USERNAME" value="postgres" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="cmdOptions" />
@@ -159,16 +171,12 @@
           <option name="envVars">
             <list>
               <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_PASSWORD" />
-                <option name="value" value="2105" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_URL" />
-                <option name="value" value="host.docker.internal" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_USERNAME" />
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
                 <option name="value" value="postgres" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="2105" />
               </DockerEnvVarImpl>
             </list>
           </option>
@@ -218,7 +226,7 @@
       <workItem from="1723624599326" duration="11051000" />
       <workItem from="1723801763194" duration="7631000" />
       <workItem from="1723809534223" duration="7222000" />
-      <workItem from="1723907429247" duration="4607000" />
+      <workItem from="1723907429247" duration="5645000" />
     </task>
     <servers />
   </component>
