@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_and_dockerize.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PortfolioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PortfolioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PortfolioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PositionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/PositionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Portfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/PortfolioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/PortfolioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/portfolio/PortfolioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/PftApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/controller/ExpenseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/dto/ExpenseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/entity/Expense.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/frutz/pft/repository/ExpenseRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +27,17 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -56,17 +58,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Image dev.executor": "Run",
+    "Maven.pft [clean,install].executor": "Run",
+    "Maven.pft [compile].executor": "Run",
+    "Maven.pft.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.Build and Dockerize.executor": "Run",
     "Spring Boot.PftApplication.executor": "Run",
     "git-widget-placeholder": "pft-cron-experimental",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu-20.04/",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,8 +86,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.PftApplication">
-    <configuration name="pft" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="Shell Script.Build and Dockerize">
+    <configuration name="pft [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -91,7 +98,10 @@
               <set />
             </option>
             <option name="goals">
-              <list />
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
             </option>
             <option name="multimoduleDir" />
             <option name="pomFileName" />
@@ -108,7 +118,27 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Build and Dockerize" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/build_and_dockerize.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="//wsl.localhost/Ubuntu-20.04/" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="PftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_DATASOURCE_URL" value="jdbc:postgresql://localhost:5432/pft" />
+        <env name="SPRING_DATASOURCE_USERNAME" value="postgres" />
+        <env name="SPRING_DATASOURCE_PASSWORD" value="2105" />
+      </envs>
       <module name="pft" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.frutz.pft.PftApplication" />
       <extension name="coverage">
@@ -121,8 +151,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Image dev" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="pftdev" />
+          <option name="containerName" value="pftdevelopment" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="2105" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_URL" />
+                <option name="value" value="host.docker.internal" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USERNAME" />
+                <option name="value" value="postgres" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="showCommandPreview" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Maven.pft" />
+      <item itemvalue="Docker.Image dev" />
+      <item itemvalue="Maven.pft [clean,install]" />
+      <item itemvalue="Shell Script.Build and Dockerize" />
       <item itemvalue="Spring Boot.PftApplication" />
     </list>
     <recent_temporary>
@@ -157,7 +216,9 @@
       <workItem from="1723525828277" duration="2307000" />
       <workItem from="1723613807743" duration="1920000" />
       <workItem from="1723624599326" duration="11051000" />
-      <workItem from="1723801763194" duration="6067000" />
+      <workItem from="1723801763194" duration="7631000" />
+      <workItem from="1723809534223" duration="7222000" />
+      <workItem from="1723907429247" duration="4607000" />
     </task>
     <servers />
   </component>
