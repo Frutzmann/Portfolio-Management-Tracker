@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.frutz.pft.PftApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.600 s -- in com.frutz.pft.PftApplicationTests
