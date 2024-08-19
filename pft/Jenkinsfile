@@ -1,7 +1,8 @@
 pipeline {
-    agent any
-    options {
-        customWorkspace '/var/lib/jenkins/workspace/spring-experimental/pft'
+    agent {
+        node {
+            customWorkspace '/var/lib/jenkins/workspace/spring-experimental/pft'
+        }
     }
 
     stages {
