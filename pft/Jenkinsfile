@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build docker') {
             steps {
-                sh "docker build -t pftdev ."
+                sh "cd pft && docker build -t pftdev ."
             }
         }
     }
