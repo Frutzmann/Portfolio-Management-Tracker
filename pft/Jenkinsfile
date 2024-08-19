@@ -2,15 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/Frutzmann/Portfolio-Management-Tracker'
-            }
-        }
         stage('Build maven') {
             steps {
                 mvn clean install
             }
+        }
+        stage('Build docker') {
+            sh "docker build -t pftdev ."
         }
     }
 }
