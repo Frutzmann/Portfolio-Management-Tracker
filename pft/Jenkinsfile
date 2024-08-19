@@ -4,11 +4,13 @@ pipeline {
     stages {
         stage('Build maven') {
             steps {
-                mvn clean install
+                sh "mvn clean install"
             }
         }
         stage('Build docker') {
-            sh "docker build -t pftdev ."
+            steps {
+                sh "docker build -t pftdev ."
+            }
         }
     }
 }
