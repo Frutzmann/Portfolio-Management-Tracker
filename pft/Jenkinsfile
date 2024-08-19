@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    options {
+        customWorkspace '/var/lib/jenkins/workspace/spring-experimental/pft'
+    }
 
     stages {
         stage('Build maven') {
