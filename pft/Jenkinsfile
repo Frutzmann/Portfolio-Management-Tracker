@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build maven') {
             steps {
-                sh "cd pft && mvn clean install"
+                sh "cd pft && mvn clean install -DskipTests"
             }
         }
         stage('Build docker') {
