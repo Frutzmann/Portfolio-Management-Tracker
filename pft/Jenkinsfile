@@ -1,6 +1,7 @@
 pipeline {
     agent {
         node {
+            label 'spring-build-experimental'
             customWorkspace '/var/lib/jenkins/workspace/spring-experimental/pft'
         }
     }
