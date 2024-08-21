@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build maven') {
             steps {
-                sh "cd pft && mvn clean install -DskipTests"
+                sh "cd pft && JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64 mvn clean install -DskipTests"
             }
         }
         stage('Build docker') {
