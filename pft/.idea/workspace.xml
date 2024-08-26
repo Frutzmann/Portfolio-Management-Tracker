@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/scripts/Gather_coin_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_and_dockerize.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.PftApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.PftApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.frutz.pft.PftApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.frutz.pft.PftApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +68,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Build and Dockerize.executor": "Run",
     "Spring Boot.PftApplication.executor": "Run",
-    "git-widget-placeholder": "pft-cron-experimental",
+    "git-widget-placeholder": "docker-compose-experimental",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu-20.04/",
+    "last_directory_selection": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft/postgres/data/base",
+    "last_opened_file_path": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft/postgres/data/base",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +85,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data\base" />
+      <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres" />
+      <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
+    </key>
+  </component>
   <component name="RunManager" selected="Docker.Image dev">
     <configuration name="pft [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -159,6 +175,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +204,14 @@
                 <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
                 <option name="value" value="2105" />
               </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
             </list>
           </option>
           <option name="showCommandPreview" value="true" />
@@ -227,6 +261,11 @@
       <workItem from="1723801763194" duration="7631000" />
       <workItem from="1723809534223" duration="7222000" />
       <workItem from="1723907429247" duration="5645000" />
+      <workItem from="1723986307499" duration="2684000" />
+      <workItem from="1723989293509" duration="1303000" />
+      <workItem from="1724446621516" duration="595000" />
+      <workItem from="1724665540375" duration="11382000" />
+      <workItem from="1724680458735" duration="1682000" />
     </task>
     <servers />
   </component>
