@@ -30,7 +30,7 @@ pipeline {
         stage('Push to Docker Registry')
         {
             steps {
-                docker.withRegistry([credentialsId: "${DOCKER_HUB_CREDENTIALS}", url:"" ]) {
+                docker.withRegistry(['', "${DOCKER_HUB_CREDENTIALS}"]) {
                     sh "cd pft && docker push ${DOCKER_IMAGE}"
                 }
             }
