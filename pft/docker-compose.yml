@@ -5,6 +5,7 @@ services:
     image: 'futzmann/pft:latest'
     build:
       context: .
+    network_mode: "host"
     container_name: 'pft-app'
     depends_on:
       db:
