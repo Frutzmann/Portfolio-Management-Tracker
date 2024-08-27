@@ -30,9 +30,12 @@ pipeline {
         stage('Push to Docker Registry')
         {
             steps {
-                docker.withRegistry(['', "${DOCKER_HUB_CREDENTIALS}"]) {
-                    sh "cd pft && docker push ${DOCKER_IMAGE}"
+                script {
+                    docker.withRegistry(['', "${DOCKER_HUB_CREDENTIALS}"]) {
+                        sh "cd pft && docker push ${DOCKER_IMAGE}"
+                    }
                 }
+
             }
         }
         stage('Run Docker Compose') {
