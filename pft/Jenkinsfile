@@ -38,7 +38,7 @@ pipeline {
         stage('Run Docker Compose') {
             agent {
                 docker {
-                    image 'docker:compose'
+                    image 'docker/compose'
                     args '-v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
