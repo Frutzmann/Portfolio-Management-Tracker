@@ -10,7 +10,7 @@ services:
       db:
         condition: service_healthy
     env_file:
-      - ./.env.dev
+      - /etc/jenkins-env/.env.dev
     ports:
       - "8080:8080"
 
@@ -18,7 +18,7 @@ services:
     image: 'postgres'
     container_name: 'db'
     env_file:
-      - ./.env.db
+      - /etc/jenkins-env/.env.db
     volumes:
       - ./postgres/data:/var/lib/postgresql/data
     ports:
