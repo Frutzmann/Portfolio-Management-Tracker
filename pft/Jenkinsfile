@@ -2,14 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Build maven') {
+        stage('Build Maven') {
             steps {
                 sh "cd pft && JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64 mvn clean install -DskipTests"
             }
         }
-        stage('Build docker') {
+        stage('Build docker image') {
             steps {
-                sh "cd pft && docker build -t pftdev ."
+                sh "cd pft && docker build -t futzmann/pft:latest ."
+            }
+        }
+        stage('Push to Docker Registry')
+        {
+            steps {
+                sh "cd pft && docker push futzmann/pft:latest"
+            }
+        }
+        stage('Run Docker Compose') {
+            steps {
+                sh "cd pft && docker compose up -d --build"
             }
         }
     }
