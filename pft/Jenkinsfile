@@ -37,7 +37,7 @@ pipeline {
         }
         stage('Run Docker Compose') {
             steps {
-                sh "cd pft && docker-compose up --build"
+                sh "cd pft && docker-compose up -d --build"
             }
         }
     }
