@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build maven') {
+            steps {
+                sh "cd pft && JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64 mvn clean install -DskipTests"
+            }
+        }
+        stage('Build docker') {
+            steps {
+                sh "cd pft && docker build -t pftdev ."
+            }
+        }
+    }
+}
