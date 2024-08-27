@@ -36,6 +36,9 @@ pipeline {
             }
         }
         stage('Run Docker Compose') {
+            agent {
+                docker {image 'ubuntu:latest'}
+            }
             steps {
                 sh "cd pft && docker compose up -d --build"
             }
