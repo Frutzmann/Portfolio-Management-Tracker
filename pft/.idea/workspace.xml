@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="" />
+    <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Build and Dockerize.executor": "Run",
     "Spring Boot.PftApplication.executor": "Run",
-    "git-widget-placeholder": "github-actions-jenkins-experimental",
+    "git-widget-placeholder": "jenkins-merge-trigger",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft/postgres/data/base",

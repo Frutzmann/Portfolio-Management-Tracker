@@ -8,6 +8,11 @@ pipeline {
     }
 
     stages {
+        stage("Checkout") {
+            steps {
+                git branch: main
+            }
+        }
         stage('Docker login') {
             steps {
                 script {
