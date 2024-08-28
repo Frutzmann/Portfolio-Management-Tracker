@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/CoinRepositoryUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/UserRepositoryUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,6 +56,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Image dev.executor": "Run",
+    "JUnit.IncomeRepositoryUnitTest.executor": "Run",
+    "JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero.executor": "Run",
+    "JUnit.IncomeRepositoryUnitTest.test.executor": "Run",
+    "JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000.executor": "Run",
+    "JUnit.UserRepositoryUnitTest.executor": "Run",
     "Maven.pft [clean,install].executor": "Run",
     "Maven.pft [compile].executor": "Run",
     "Maven.pft.executor": "Run",
@@ -61,7 +72,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Build and Dockerize.executor": "Run",
     "Spring Boot.PftApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "tests-experimental",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft/postgres/data/base",
@@ -88,7 +99,96 @@
       <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Image dev">
+  <component name="RunManager" selected="JUnit.UserRepositoryUnitTest">
+    <configuration name="IncomeRepositoryUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
+      <option name="METHOD_NAME" value="saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncomeRepositoryUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
+      <option name="METHOD_NAME" value="testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.UserRepositoryUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="pft [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -154,34 +254,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="PftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="SPRING_DATASOURCE_URL" value="jdbc:postgresql://localhost:5432/pft" />
-        <env name="SPRING_DATASOURCE_USERNAME" value="postgres" />
-        <env name="SPRING_DATASOURCE_PASSWORD" value="2105" />
-      </envs>
-      <module name="pft" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.frutz.pft.PftApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Image dev" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -215,13 +287,21 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Image dev" />
+      <item itemvalue="JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
+      <item itemvalue="JUnit.IncomeRepositoryUnitTest.test" />
+      <item itemvalue="JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
+      <item itemvalue="JUnit.UserRepositoryUnitTest" />
+      <item itemvalue="JUnit.IncomeRepositoryUnitTest" />
       <item itemvalue="Maven.pft [clean,install]" />
       <item itemvalue="Shell Script.Build and Dockerize" />
-      <item itemvalue="Spring Boot.PftApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PftApplication" />
+        <item itemvalue="JUnit.UserRepositoryUnitTest" />
+        <item itemvalue="JUnit.IncomeRepositoryUnitTest" />
+        <item itemvalue="JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
+        <item itemvalue="JUnit.IncomeRepositoryUnitTest.test" />
+        <item itemvalue="JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
       </list>
     </recent_temporary>
   </component>
