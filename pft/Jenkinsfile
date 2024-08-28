@@ -1,15 +1,43 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKER_IMAGE="futzmann/pft:experimental"
+        DOCKER_REGISTRY="http://index.docker.io/v1/"
+        DOCKER_HUB_CREDENTIALS='docker-hub-credentials'
+    }
+
     stages {
-        stage('Build maven') {
+        stage('Docker login') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: "${DOCKER_HUB_CREDENTIALS}", usernameVariable:'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                        sh "echo ${DOCKER_PASS} | docker login -u ${DOCKER_USER} --password-stdin ${DOCKER_REGISTRY}"
+                    }
+                }
+            }
+        }
+        stage('Build Maven') {
             steps {
                 sh "cd pft && JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64 mvn clean install -DskipTests"
             }
         }
-        stage('Build docker') {
+        stage('Build docker image') {
             steps {
-                sh "cd pft && docker build -t pftdev ."
+                sh "cd pft && docker build -t ${DOCKER_IMAGE} ."
+            }
+        }
+        stage('Push to Docker Registry')
+        {
+            steps {
+                withDockerRegistry([credentialsId: "${DOCKER_HUB_CREDENTIALS}", url:"" ]) {
+                    sh "cd pft && docker push ${DOCKER_IMAGE}"
+                }
+            }
+        }
+        stage('Run Docker Compose') {
+            steps {
+                sh "cd pft && docker compose up -d --build"
             }
         }
     }
