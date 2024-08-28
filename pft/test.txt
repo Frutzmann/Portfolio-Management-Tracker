@@ -1,3 +1,4 @@
 This is a test
 If the trigger works
+This is another test
 Unit Tests we will do!
