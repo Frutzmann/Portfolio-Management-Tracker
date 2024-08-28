@@ -1,5 +1,5 @@
 version: '3'
-
+# Adding some changes commenting the Docker Compose
 services:
   app:
     image: 'futzmann/pft:latest'
