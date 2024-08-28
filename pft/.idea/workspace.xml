@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/CoinRepositoryUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/UserRepositoryUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,8 @@
     "JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero.executor": "Run",
     "JUnit.IncomeRepositoryUnitTest.test.executor": "Run",
     "JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000.executor": "Run",
+    "JUnit.PortfolioRepositoryUnitTest.executor": "Run",
+    "JUnit.PositionRepositoryUnitTest.executor": "Run",
     "JUnit.UserRepositoryUnitTest.executor": "Run",
     "Maven.pft [clean,install].executor": "Run",
     "Maven.pft [compile].executor": "Run",
@@ -99,7 +97,7 @@
       <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryUnitTest">
+  <component name="RunManager" selected="JUnit.PositionRepositoryUnitTest">
     <configuration name="IncomeRepositoryUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
@@ -126,38 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
-      <option name="METHOD_NAME" value="saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IncomeRepositoryUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
@@ -170,6 +136,36 @@
       <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.IncomeRepositoryUnitTest" />
       <option name="METHOD_NAME" value="testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortfolioRepositoryUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.PortfolioRepositoryUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionRepositoryUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.repository.PositionRepositoryUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,9 +283,9 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Image dev" />
-      <item itemvalue="JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
-      <item itemvalue="JUnit.IncomeRepositoryUnitTest.test" />
       <item itemvalue="JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
+      <item itemvalue="JUnit.PortfolioRepositoryUnitTest" />
+      <item itemvalue="JUnit.PositionRepositoryUnitTest" />
       <item itemvalue="JUnit.UserRepositoryUnitTest" />
       <item itemvalue="JUnit.IncomeRepositoryUnitTest" />
       <item itemvalue="Maven.pft [clean,install]" />
@@ -297,11 +293,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionRepositoryUnitTest" />
+        <item itemvalue="JUnit.PortfolioRepositoryUnitTest" />
         <item itemvalue="JUnit.UserRepositoryUnitTest" />
         <item itemvalue="JUnit.IncomeRepositoryUnitTest" />
         <item itemvalue="JUnit.IncomeRepositoryUnitTest.testSaveIncomeShouldReturnAnIdNotEqual0AndAmountShouldEqual3000" />
-        <item itemvalue="JUnit.IncomeRepositoryUnitTest.test" />
-        <item itemvalue="JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero" />
       </list>
     </recent_temporary>
   </component>
