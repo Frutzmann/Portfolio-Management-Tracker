@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
-
-
     environment {
         DOCKER_IMAGE="futzmann/pft:experimental"
         DOCKER_REGISTRY="http://index.docker.io/v1/"
@@ -25,9 +23,6 @@ pipeline {
             }
         }
         stage('Test') {
-            tools {
-                jdk 'jdk-22-oracle-x64'
-            }
             steps {
                 sh "cd pft && mvn test"
             }
