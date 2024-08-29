@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/integration/UserControllerIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/CoinControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/CoinControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PortfolioControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PortfolioControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PositionControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PositionControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/UserControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/CoinRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/CoinRepositoryUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/PortfolioRepositoryUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/PositionRepositoryUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/UserRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/UserRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +361,7 @@
       <workItem from="1724680458735" duration="1682000" />
       <workItem from="1724743472499" duration="1038000" />
       <workItem from="1724824975288" duration="311000" />
-      <workItem from="1724911985732" duration="12748000" />
+      <workItem from="1724911985732" duration="13060000" />
     </task>
     <servers />
   </component>
