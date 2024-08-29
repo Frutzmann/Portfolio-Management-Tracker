@@ -1,6 +1,8 @@
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\controller\PositionControllerUnitTest.java
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\PftApplicationTests.java
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\repository\CoinRepositoryUnitTest.java
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\repository\PortfolioRepositoryUnitTest.java
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\repository\PositionRepositoryUnitTest.java
-C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\repository\UserRepositoryUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\controller\CoinControllerUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\controller\PortfolioControllerUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\controller\PositionControllerUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\controller\UserControllerUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\repository\CoinRepositoryUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\repository\PortfolioRepositoryUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\repository\PositionRepositoryUnitTest.java
+C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\src\test\java\com\frutz\pft\unit\repository\UserRepositoryUnitTest.java

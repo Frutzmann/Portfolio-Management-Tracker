@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'jdk-22-oracle-x64'
+    }
+
     environment {
         DOCKER_IMAGE="futzmann/pft:experimental"
         DOCKER_REGISTRY="http://index.docker.io/v1/"

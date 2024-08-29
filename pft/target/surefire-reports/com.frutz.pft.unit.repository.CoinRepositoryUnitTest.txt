@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.frutz.pft.unit.repository.CoinRepositoryUnitTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.220 s -- in com.frutz.pft.unit.repository.CoinRepositoryUnitTest
