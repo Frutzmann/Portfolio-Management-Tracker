@@ -1,6 +1,7 @@
-package com.frutz.pft.controller;
+package com.frutz.pft.unit.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.frutz.pft.controller.PortfolioController;
 import com.frutz.pft.dto.PortfolioDTO;
 import com.frutz.pft.entity.Portfolio;
 import com.frutz.pft.entity.User;

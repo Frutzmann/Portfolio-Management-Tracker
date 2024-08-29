@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/CoinControllerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/integration/UserControllerIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/CoinControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/CoinControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PortfolioControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PortfolioControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PositionControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PositionControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/UserControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/CoinRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/CoinRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PortfolioRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/PortfolioRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/PositionRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/PositionRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/repository/UserRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/repository/UserRepositoryUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +60,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Image dev.executor": "Run",
+    "JUnit.CoinControllerUnitTest.executor": "Run",
     "JUnit.CoinRepositoryUnitTest.executor": "Run",
     "JUnit.IncomeRepositoryUnitTest.executor": "Run",
     "JUnit.IncomeRepositoryUnitTest.saveEmployeeShouldReturnEmployeeIdOtherThanZero.executor": "Run",
@@ -72,9 +80,13 @@
     "JUnit.PositionControllerUnitTest.testUpdatePosition_BadRequest.executor": "Run",
     "JUnit.PositionControllerUnitTest.testUpdatePosition_Ok.executor": "Run",
     "JUnit.PositionRepositoryUnitTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.addUserTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.executor": "Run",
     "JUnit.UserControllerUnitTest.executor": "Run",
     "JUnit.UserRepositoryUnitTest.executor": "Run",
+    "JUnit.pft in pft.executor": "Run",
     "JUnit.repository in pft.executor": "Run",
+    "JUnit.unit in pft.executor": "Run",
     "Maven.pft [clean,install].executor": "Run",
     "Maven.pft [compile].executor": "Run",
     "Maven.pft.executor": "Run",
@@ -113,7 +125,7 @@
       <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pft in pft">
+  <component name="RunManager" selected="JUnit.UserControllerIntegrationTest">
     <configuration name="CoinControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
@@ -129,47 +141,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PortfolioControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frutz.pft.controller.*" />
+          <option name="PATTERN" value="com.frutz.pft.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.PortfolioControllerUnitTest" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.integration.UserControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerIntegrationTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frutz.pft.controller.*" />
+          <option name="PATTERN" value="com.frutz.pft.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.PositionControllerUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.UserControllerUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.frutz.pft.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.integration.UserControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="addUserTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +187,14 @@
       <module name="pft" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$/src/test/java/com/frutz/pft" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unit in pft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,21 +316,21 @@
     <list>
       <item itemvalue="Docker.Image dev" />
       <item itemvalue="JUnit.CoinControllerUnitTest" />
-      <item itemvalue="JUnit.PortfolioControllerUnitTest" />
-      <item itemvalue="JUnit.UserControllerUnitTest" />
+      <item itemvalue="JUnit.UserControllerIntegrationTest" />
+      <item itemvalue="JUnit.UserControllerIntegrationTest.addUserTest" />
       <item itemvalue="JUnit.pft in pft" />
-      <item itemvalue="JUnit.PositionControllerUnitTest" />
+      <item itemvalue="JUnit.unit in pft" />
       <item itemvalue="Maven.pft [clean,install]" />
       <item itemvalue="Shell Script.Build and Dockerize" />
       <item itemvalue="Spring Boot.PftApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerIntegrationTest" />
+        <item itemvalue="JUnit.UserControllerIntegrationTest.addUserTest" />
+        <item itemvalue="JUnit.unit in pft" />
         <item itemvalue="JUnit.pft in pft" />
         <item itemvalue="JUnit.CoinControllerUnitTest" />
-        <item itemvalue="JUnit.UserControllerUnitTest" />
-        <item itemvalue="JUnit.PortfolioControllerUnitTest" />
-        <item itemvalue="JUnit.PositionControllerUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +370,7 @@
       <workItem from="1724680458735" duration="1682000" />
       <workItem from="1724743472499" duration="1038000" />
       <workItem from="1724824975288" duration="311000" />
-      <workItem from="1724911985732" duration="10172000" />
+      <workItem from="1724911985732" duration="12748000" />
     </task>
     <servers />
   </component>

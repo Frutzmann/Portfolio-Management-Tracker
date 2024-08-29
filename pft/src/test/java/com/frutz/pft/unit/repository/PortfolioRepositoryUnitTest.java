@@ -1,7 +1,9 @@
-package com.frutz.pft.repository;
+package com.frutz.pft.unit.repository;
 
 import com.frutz.pft.entity.Portfolio;
 import com.frutz.pft.entity.User;
+import com.frutz.pft.repository.PortfolioRepository;
+import com.frutz.pft.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

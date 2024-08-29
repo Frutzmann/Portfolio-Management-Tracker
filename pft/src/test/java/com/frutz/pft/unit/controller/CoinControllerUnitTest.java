@@ -1,6 +1,7 @@
-package com.frutz.pft.controller;
+package com.frutz.pft.unit.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.frutz.pft.controller.CoinController;
 import com.frutz.pft.dto.CoinDTO;
 import com.frutz.pft.entity.Coin;
 import com.frutz.pft.services.coin.CoinService;

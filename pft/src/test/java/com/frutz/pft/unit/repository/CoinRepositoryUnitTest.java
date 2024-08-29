@@ -1,6 +1,7 @@
-package com.frutz.pft.repository;
+package com.frutz.pft.unit.repository;
 
 import com.frutz.pft.entity.Coin;
+import com.frutz.pft.repository.CoinRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
