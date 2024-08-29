@@ -37,7 +37,7 @@ public class PositionController {
             List<Position> positions = positionService.findPositionByCoin(id);
             return ResponseEntity.ok(positions);
         } catch (EntityNotFoundException e) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }

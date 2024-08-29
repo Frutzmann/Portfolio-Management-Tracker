@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.frutz.pft.PftApplicationTests" time="3.252" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.frutz.pft.repository.CoinRepositoryUnitTest" time="0.85" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -68,9 +68,9 @@
     <property name="java.class.version" value="66.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[pft] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.frutz.pft.PftApplicationTests" time="0.003">
-    <system-out><![CDATA[2024-08-29T09:47:52.954+02:00  INFO 18492 --- [pft] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.frutz.pft.PftApplicationTests]: PftApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T09:47:52.962+02:00  INFO 18492 --- [pft] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.frutz.pft.PftApplication for test class com.frutz.pft.PftApplicationTests
+  <testcase name="testGetAllCoins" classname="com.frutz.pft.repository.CoinRepositoryUnitTest" time="0.237">
+    <system-out><![CDATA[2024-08-29T09:47:56.208+02:00  INFO 18492 --- [pft] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.frutz.pft.repository.CoinRepositoryUnitTest]: CoinRepositoryUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T09:47:56.222+02:00  INFO 18492 --- [pft] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.frutz.pft.PftApplication for test class com.frutz.pft.repository.CoinRepositoryUnitTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -81,22 +81,49 @@
 
  :: Spring Boot ::                (v3.3.2)
 
-2024-08-29T09:47:52.999+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : Starting PftApplicationTests using Java 22.0.2 with PID 18492 (started by remix in C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft)
-2024-08-29T09:47:53.000+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T09:47:53.498+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T09:47:53.589+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
-2024-08-29T09:47:53.890+02:00  INFO 18492 --- [pft] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T09:47:53.965+02:00  INFO 18492 --- [pft] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T09:47:53.992+02:00  INFO 18492 --- [pft] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T09:47:54.107+02:00  INFO 18492 --- [pft] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T09:47:54.128+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T09:47:54.255+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55821edf
-2024-08-29T09:47:54.257+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T09:47:55.038+02:00  INFO 18492 --- [pft] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T09:47:55.099+02:00  INFO 18492 --- [pft] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T09:47:55.360+02:00  INFO 18492 --- [pft] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-08-29T09:47:56.011+02:00  WARN 18492 --- [pft] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T09:47:56.201+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : Started PftApplicationTests in 3.228 seconds (process running for 7.248)
+2024-08-29T09:47:56.244+02:00  INFO 18492 --- [pft] [           main] c.f.p.repository.CoinRepositoryUnitTest  : Starting CoinRepositoryUnitTest using Java 22.0.2 with PID 18492 (started by remix in C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft)
+2024-08-29T09:47:56.244+02:00  INFO 18492 --- [pft] [           main] c.f.p.repository.CoinRepositoryUnitTest  : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T09:47:56.301+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T09:47:56.316+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 6 JPA repository interfaces.
+2024-08-29T09:47:56.327+02:00  INFO 18492 --- [pft] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-08-29T09:47:56.356+02:00  INFO 18492 --- [pft] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:db77a4b9-e2fe-4689-9c16-1d197a8add58;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-08-29T09:47:56.513+02:00  INFO 18492 --- [pft] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T09:47:56.516+02:00  INFO 18492 --- [pft] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T09:47:56.522+02:00  INFO 18492 --- [pft] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T09:47:56.716+02:00  INFO 18492 --- [pft] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table coin (id varchar(255) not null, change_percent24hr float(24), market_cap_usd float(24), name varchar(255), price_usd float(24), rank varchar(255), supply float(24) not null, symbol varchar(255), volume_usd24hr float(24), primary key (id))
+Hibernate: create table expense (id bigint generated by default as identity, amount integer, category varchar(255), date date, description varchar(255), title varchar(255), primary key (id))
+Hibernate: create table income (id bigint generated by default as identity, amount integer, category varchar(255), date date, description varchar(255), title varchar(255), primary key (id))
+Hibernate: create table pft_user (id bigint generated by default as identity, email varchar(255), password varchar(255), username varchar(255), primary key (id))
+Hibernate: create table portfolio (id bigint not null, cash_balance_usd bigint, name varchar(255), type varchar(255), user_id bigint not null, primary key (id))
+Hibernate: create table position (id bigint not null, amount_usd numeric(38,2), number_of_coins bigint, coin_id varchar(255) not null, portfolio_id bigint not null, primary key (id))
+Hibernate: alter table if exists portfolio drop constraint if exists UKc7fv45hgmubvas83vp5ikuo0i
+Hibernate: alter table if exists portfolio add constraint UKc7fv45hgmubvas83vp5ikuo0i unique (user_id)
+Hibernate: create sequence portfolio_seq start with 1 increment by 50
+Hibernate: create sequence position_seq start with 1 increment by 50
+Hibernate: alter table if exists portfolio add constraint FK6hxsugbs5gsvwnmmil64yi365 foreign key (user_id) references pft_user
+Hibernate: alter table if exists position add constraint FKsw4vgjae9ydjppghoi7wiflay foreign key (coin_id) references coin
+Hibernate: alter table if exists position add constraint FKfasqiaxvlw3whr2epqledio52 foreign key (portfolio_id) references portfolio
+2024-08-29T09:47:56.757+02:00  INFO 18492 --- [pft] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T09:47:56.803+02:00  INFO 18492 --- [pft] [           main] c.f.p.repository.CoinRepositoryUnitTest  : Started CoinRepositoryUnitTest in 0.579 seconds (process running for 7.849)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCoinById" classname="com.frutz.pft.repository.CoinRepositoryUnitTest" time="0.009">
+    <system-out><![CDATA[Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllSymbols" classname="com.frutz.pft.repository.CoinRepositoryUnitTest" time="0.005">
+    <system-out><![CDATA[Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0
 ]]></system-out>
   </testcase>
 </testsuite>

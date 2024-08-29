@@ -1,1 +1,6 @@
+com\frutz\pft\repository\PortfolioRepositoryUnitTest.class
+com\frutz\pft\repository\UserRepositoryUnitTest.class
+com\frutz\pft\repository\CoinRepositoryUnitTest.class
 com\frutz\pft\PftApplicationTests.class
+com\frutz\pft\controller\PositionControllerUnitTest.class
+com\frutz\pft\repository\PositionRepositoryUnitTest.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.frutz.pft.PftApplicationTests" time="3.252" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.06" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -68,35 +68,58 @@
     <property name="java.class.version" value="66.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[pft] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.frutz.pft.PftApplicationTests" time="0.003">
-    <system-out><![CDATA[2024-08-29T09:47:52.954+02:00  INFO 18492 --- [pft] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.frutz.pft.PftApplicationTests]: PftApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T09:47:52.962+02:00  INFO 18492 --- [pft] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.frutz.pft.PftApplication for test class com.frutz.pft.PftApplicationTests
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.3.2)
-
-2024-08-29T09:47:52.999+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : Starting PftApplicationTests using Java 22.0.2 with PID 18492 (started by remix in C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft)
-2024-08-29T09:47:53.000+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T09:47:53.498+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T09:47:53.589+02:00  INFO 18492 --- [pft] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
-2024-08-29T09:47:53.890+02:00  INFO 18492 --- [pft] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T09:47:53.965+02:00  INFO 18492 --- [pft] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T09:47:53.992+02:00  INFO 18492 --- [pft] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T09:47:54.107+02:00  INFO 18492 --- [pft] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T09:47:54.128+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T09:47:54.255+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55821edf
-2024-08-29T09:47:54.257+02:00  INFO 18492 --- [pft] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T09:47:55.038+02:00  INFO 18492 --- [pft] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T09:47:55.099+02:00  INFO 18492 --- [pft] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T09:47:55.360+02:00  INFO 18492 --- [pft] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-08-29T09:47:56.011+02:00  WARN 18492 --- [pft] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T09:47:56.201+02:00  INFO 18492 --- [pft] [           main] com.frutz.pft.PftApplicationTests        : Started PftApplicationTests in 3.228 seconds (process running for 7.248)
+  <testcase name="testFindByCoinId" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.01">
+    <system-out><![CDATA[2024-08-29T09:47:57.138+02:00  INFO 18492 --- [pft] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.frutz.pft.repository.PositionRepositoryUnitTest]: PositionRepositoryUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T09:47:57.143+02:00  INFO 18492 --- [pft] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.frutz.pft.PftApplication for test class com.frutz.pft.repository.PositionRepositoryUnitTest
+Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select next value for position_seq
+Hibernate: insert into portfolio (cash_balance_usd,name,type,user_id,id) values (?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into position (amount_usd,coin_id,number_of_coins,portfolio_id,id) values (?,?,?,?,?)
+Hibernate: select p1_0.id,p1_0.amount_usd,p1_0.coin_id,p1_0.number_of_coins,p1_0.portfolio_id from position p1_0 where p1_0.coin_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPositionById" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select next value for position_seq
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdatePosition" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindAllPositions" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.009">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: insert into portfolio (cash_balance_usd,name,type,user_id,id) values (?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into position (amount_usd,coin_id,number_of_coins,portfolio_id,id) values (?,?,?,?,?)
+Hibernate: insert into position (amount_usd,coin_id,number_of_coins,portfolio_id,id) values (?,?,?,?,?)
+Hibernate: select p1_0.id,p1_0.amount_usd,p1_0.coin_id,p1_0.number_of_coins,p1_0.portfolio_id from position p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testSavePosition" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testDeletePosition" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByPortfolioId" classname="com.frutz.pft.repository.PositionRepositoryUnitTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into pft_user (email,password,username,id) values (?,?,?,default)
+Hibernate: select c1_0.id,c1_0.change_percent24hr,c1_0.market_cap_usd,c1_0.name,c1_0.price_usd,c1_0.rank,c1_0.supply,c1_0.symbol,c1_0.volume_usd24hr from coin c1_0 where c1_0.id=?
+Hibernate: insert into portfolio (cash_balance_usd,name,type,user_id,id) values (?,?,?,?,?)
+Hibernate: insert into coin (change_percent24hr,market_cap_usd,name,price_usd,rank,supply,symbol,volume_usd24hr,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: insert into position (amount_usd,coin_id,number_of_coins,portfolio_id,id) values (?,?,?,?,?)
+Hibernate: select p1_0.id,p1_0.amount_usd,p1_0.coin_id,p1_0.number_of_coins,p1_0.portfolio_id from position p1_0 where p1_0.portfolio_id=?
 ]]></system-out>
   </testcase>
 </testsuite>
