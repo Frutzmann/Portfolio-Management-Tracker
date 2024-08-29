@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'jdk-22-oracle-x64'
-    }
+
 
     environment {
         DOCKER_IMAGE="futzmann/pft:experimental"
@@ -27,6 +25,9 @@ pipeline {
             }
         }
         stage('Test') {
+            tools {
+                jdk 'jdk-22-oracle-x64'
+            }
             steps {
                 sh "cd pft && mvn test"
             }
