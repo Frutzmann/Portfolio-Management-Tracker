@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PortfolioControllerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/CoinControllerUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/PositionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/position/PositionServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PositionControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/PositionControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.PftApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.PftApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.frutz.pft.PftApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.frutz.pft.PftApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/controller/UserControllerUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +72,7 @@
     "JUnit.PositionControllerUnitTest.testUpdatePosition_BadRequest.executor": "Run",
     "JUnit.PositionControllerUnitTest.testUpdatePosition_Ok.executor": "Run",
     "JUnit.PositionRepositoryUnitTest.executor": "Run",
+    "JUnit.UserControllerUnitTest.executor": "Run",
     "JUnit.UserRepositoryUnitTest.executor": "Run",
     "JUnit.repository in pft.executor": "Run",
     "Maven.pft [clean,install].executor": "Run",
@@ -122,7 +113,22 @@
       <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PortfolioControllerUnitTest">
+  <component name="RunManager" selected="JUnit.pft in pft">
+    <configuration name="CoinControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frutz.pft.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.CoinControllerUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PortfolioControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
@@ -153,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionControllerUnitTest.testDeletePosition_BadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
         <pattern>
@@ -162,41 +168,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.PositionControllerUnitTest" />
-      <option name="METHOD_NAME" value="testDeletePosition_BadRequest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.UserControllerUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionControllerUnitTest.testDeletePosition_Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="pft in pft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.PositionControllerUnitTest" />
-      <option name="METHOD_NAME" value="testDeletePosition_Ok" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositionControllerUnitTest.testUpdatePosition_Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frutz.pft.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frutz.pft.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.frutz.pft.controller.PositionControllerUnitTest" />
-      <option name="METHOD_NAME" value="testUpdatePosition_Ok" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/frutz/pft" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -317,10 +298,10 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Image dev" />
+      <item itemvalue="JUnit.CoinControllerUnitTest" />
       <item itemvalue="JUnit.PortfolioControllerUnitTest" />
-      <item itemvalue="JUnit.PositionControllerUnitTest.testDeletePosition_BadRequest" />
-      <item itemvalue="JUnit.PositionControllerUnitTest.testDeletePosition_Ok" />
-      <item itemvalue="JUnit.PositionControllerUnitTest.testUpdatePosition_Ok" />
+      <item itemvalue="JUnit.UserControllerUnitTest" />
+      <item itemvalue="JUnit.pft in pft" />
       <item itemvalue="JUnit.PositionControllerUnitTest" />
       <item itemvalue="Maven.pft [clean,install]" />
       <item itemvalue="Shell Script.Build and Dockerize" />
@@ -328,11 +309,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.pft in pft" />
+        <item itemvalue="JUnit.CoinControllerUnitTest" />
+        <item itemvalue="JUnit.UserControllerUnitTest" />
         <item itemvalue="JUnit.PortfolioControllerUnitTest" />
         <item itemvalue="JUnit.PositionControllerUnitTest" />
-        <item itemvalue="JUnit.PositionControllerUnitTest.testDeletePosition_Ok" />
-        <item itemvalue="JUnit.PositionControllerUnitTest.testDeletePosition_BadRequest" />
-        <item itemvalue="JUnit.PositionControllerUnitTest.testUpdatePosition_Ok" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +353,7 @@
       <workItem from="1724680458735" duration="1682000" />
       <workItem from="1724743472499" duration="1038000" />
       <workItem from="1724824975288" duration="311000" />
-      <workItem from="1724911985732" duration="9678000" />
+      <workItem from="1724911985732" duration="10172000" />
     </task>
     <servers />
   </component>
