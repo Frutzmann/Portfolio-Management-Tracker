@@ -58,7 +58,7 @@ public class PositionServiceImp implements  PositionService{
     public List<Position> getPositionByPortfolioId(long portfolioId) {
         List<Position> position = positionRepository.findByPortfolioId(portfolioId);
 
-        if (position == null)
+        if (position.isEmpty())
             throw new EntityNotFoundException("Position not found");
 
         return position;
@@ -68,7 +68,7 @@ public class PositionServiceImp implements  PositionService{
     public List<Position> findPositionByCoin(String coinId) {
         List<Position> position = positionRepository.findByCoinId(coinId);
 
-        if (position == null)
+        if (position.isEmpty())
             throw new EntityNotFoundException("Position not found");
 
         return position;

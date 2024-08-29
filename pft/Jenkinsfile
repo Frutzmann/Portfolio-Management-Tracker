@@ -22,6 +22,11 @@ pipeline {
                 sh "cd pft && JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64 mvn clean install -DskipTests"
             }
         }
+        stage('Test') {
+            steps {
+                sh "cd pft && mvn test"
+            }
+        }
         stage('Build docker image') {
             steps {
                 sh "cd pft && docker build -t ${DOCKER_IMAGE} ."
