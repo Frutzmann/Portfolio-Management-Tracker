@@ -50,9 +50,6 @@ pipeline {
             }
         }
         stage('Run Docker Compose') {
-            when {
-                changeset "pft/**"
-            }
             steps {
                 sh "cd pft && docker compose up -d --build"
             }
