@@ -1,9 +1,11 @@
 pipeline {
 
+
+    agent any
+
     triggers {
         githubPush()
     }
-    agent any
 
     environment {
         DOCKER_IMAGE="futzmann/pft:experimental"
