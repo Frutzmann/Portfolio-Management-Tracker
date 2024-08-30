@@ -73,10 +73,9 @@ public class PortfolioController {
         }
     }
 
-    @GetMapping("/all")
-    public ResponseEntity<?> getAllPortfolios() {
-        return ResponseEntity.ok(portfolioService.getAllPortfolios());
-    }
-
+    //@GetMapping("/all")
+    //public ResponseEntity<?> getAllPortfolios() {
+    //    return ResponseEntity.ok(portfolioService.getAllPortfolios());
+    //}
 
 }
