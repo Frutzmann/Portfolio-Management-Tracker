@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7ae759-42e0-492a-95e9-888a65d5a829" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CoinCap-API-Pipeline/pythonProject/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/pft-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/ExpenseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/IncomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/controller/StatsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/ExpenseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/GraphDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/IncomeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/dto/StatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Expense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/entity/Income.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/ExpenseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/repository/IncomeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/expense/ExpenseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/income/IncomeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frutz/pft/services/stats/StatsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/CoinControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/CoinControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PortfolioControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PortfolioControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PositionControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/PositionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/UserControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/frutz/pft/unit/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.CoinControllerUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.CoinControllerUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.PortfolioControllerUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.PortfolioControllerUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.PositionControllerUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.frutz.pft.unit.controller.PositionControllerUnitTest.xml" afterDir="false" />
@@ -109,7 +129,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Build and Dockerize.executor": "Run",
     "Spring Boot.PftApplication.executor": "Debug",
-    "git-widget-placeholder": "tests-experimental",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/remix/MyPortfolio/PortfolioTracker/PortfolioManagementTracker/pft/postgres/data/base",
@@ -136,7 +156,7 @@
       <recent name="C:\Users\remix\MyPortfolio\PortfolioTracker\PortfolioManagementTracker\pft\postgres\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.pft [clean,install]">
+  <component name="RunManager" selected="Maven.pft [test]">
     <configuration name="CoinControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pft" />
       <extension name="coverage">
