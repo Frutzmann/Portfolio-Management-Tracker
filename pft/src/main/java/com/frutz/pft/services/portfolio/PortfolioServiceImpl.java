@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.sound.sampled.Port;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -66,6 +67,11 @@ public class PortfolioServiceImpl implements PortfolioService {
             throw new EntityNotFoundException("Portfolio not found");
 
         return portfolio;
+    }
+
+    @Override
+    public List<Portfolio> getAllPortfolios() {
+        return portfolioRepository.findAll();
     }
 
     @Override
