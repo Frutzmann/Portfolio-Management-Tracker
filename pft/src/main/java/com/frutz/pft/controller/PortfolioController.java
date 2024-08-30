@@ -72,9 +72,4 @@ public class PortfolioController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
     }
-
-    @GetMapping("/all")
-    public ResponseEntity<?> getAllPortfolios() {
-        return ResponseEntity.ok(portfolioService.getAllPortfolios());
-    }
 }
