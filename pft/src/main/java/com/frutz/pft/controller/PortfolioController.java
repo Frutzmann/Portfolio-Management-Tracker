@@ -21,7 +21,7 @@ public class PortfolioController {
     public ResponseEntity<?> createPortfolio(@RequestBody PortfolioDTO portfolioDTO) {
         Portfolio createdPortfolio = portfolioService.postPortfolio(portfolioDTO);
 
-        if(createdPortfolio == null)
+        if (createdPortfolio == null)
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 
         return ResponseEntity.status(HttpStatus.CREATED).body(createdPortfolio);
@@ -72,4 +72,11 @@ public class PortfolioController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<?> getAllPortfolios() {
+        return ResponseEntity.ok(portfolioService.getAllPortfolios());
+    }
+
+
 }
