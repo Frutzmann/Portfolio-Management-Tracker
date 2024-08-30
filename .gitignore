@@ -24,3 +24,10 @@ hs_err_pid*
 
 #IntelliJ compiler files
 .idea
+
+pft/.idea
+pft/.mvn
+pft/.env.*
+
+/coincap-api-pipeline/pythonProject/.venv/
+/coincap-api-pipeline/pythonProject/bin/
